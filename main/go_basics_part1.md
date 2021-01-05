@@ -35,3 +35,31 @@ you can call a function in another file within the same package. but when runnin
 go run main.go helper.go
 ```
 
+
+## Card Deck Example
+
+
+
+The equivalnet of list (in python) are "array" and "slice" in go. array has fixed length.
+
+We define a slice like this:
+
+```
+	dec := []string{"Ace of Heart" , "Two of Heart"}
+```
+
+The indexing is pretty much like python.
+
+
+you don't have 'self' or 'this' to refer to objects of a class in go.
+
+A class is define just by the keyword 'type'.
+
+```
+type deck []string
+```
+
+Note that Every variable always have to be declared first!
+
+By referencing to pieaces of a slice,  We created  new references that point at subsections of the slice. We never directly modified the slice that  is pointing at.
+
