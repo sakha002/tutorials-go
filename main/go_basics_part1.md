@@ -53,7 +53,7 @@ The indexing is pretty much like python.
 
 you don't have 'self' or 'this' to refer to objects of a class in go.
 
-A class is define just by the keyword 'type'.
+A class is defined just by the keyword 'type'.
 
 ```
 type deck []string
@@ -63,3 +63,16 @@ Note that Every variable always have to be declared first!
 
 By referencing to pieaces of a slice,  We created  new references that point at subsections of the slice. We never directly modified the slice that  is pointing at.
 
+
+
+## Card Deck Example Continued
+
+it seems that the way we separate arguments in new lines for prettyfying! is not Okay with go.
+
+So the improt statement 'from io import ioutils' becomes 'import io/ioutils'
+
+I don't like using a short name to represent a "receiver"  ( or "self" in python). Also don't like the way they name the variables and errors.
+
+I found that Go linter does not like "_" in the variable names.
+
+Also class names ( for example "deck" here) start with lowercase.
