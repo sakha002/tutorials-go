@@ -76,3 +76,19 @@ I don't like using a short name to represent a "receiver"  ( or "self" in python
 I found that Go linter does not like "_" in the variable names.
 
 Also class names ( for example "deck" here) start with lowercase.
+
+## The First Assignment 
+
+okay so the basic for loop syntax reminder: 'for i := 0; i <6; i++ {}'
+reminders: 
+	use ; not , 
+	don't ever use 'in'!
+	range is only for slices/arrays
+
+if else syntax: 'if statement {} else {}'
+if you use math.Mod(), then the argument needs to be float, a better way is to use % ( 7 % 2)
+you can include multiple items in the print statement with ',' separator.
+
+
+
+
