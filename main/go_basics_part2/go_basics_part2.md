@@ -6,9 +6,10 @@
 
 okay so the first example is good to notify how one used to python may assume that you can just modify a class instance.
 By the way, even in python these things can get confusing, i.e. how the concept of pointers work.
-So It would be interesting to refresh my memory on this some time.
 
-One general rule in Go that I feel will be guiding a lot, is that "Go always pass by value".
+**ToDO**  It would be interesting to refresh my memory on this pointer (mutable/immutable) variables in python sometime later.
+
+**NOte:** One general rule in Go that will be usefull a lot, is that "Go always pass by value".
 
 Now the way that I want to make myself remember is that "&" operator tells Go to give the address of a variable.
 The '*' operator tells to give the value of a pointer.
@@ -68,3 +69,21 @@ The 'colors:= make(map[string]string)' and 'var colors map [string]string' will 
 
 
 ## Interfaces
+
+
+interface syntax is:
+
+```
+
+type <type_name> interface {
+	<func_name>(<function_argument_types>) <function_output_types>
+
+}
+
+```
+
+okay so far I have not found much signs of object oriented concepts in go, like inheritance, etc.
+Also as I understood, go is not much of a object oriented language.
+So what came to me is how objec oriented concepts (specially by matching with python) are implemented.
+This interface is a good example. Seems to me that this is somehow related to inheritance.
+we link a bunch of types to a  new (probably more generic) type th
