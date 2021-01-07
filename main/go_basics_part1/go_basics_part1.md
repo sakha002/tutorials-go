@@ -92,3 +92,81 @@ you can include multiple items in the print statement with ',' separator.
 
 
 
+## Structs
+
+so the course says that 'struct' resembles the 'dict' in python but I feel it is more related to classes, after all it is defined by 'type'.
+okay so three ways to define a struct:
+
+first way:
+
+```
+type contact struct { 
+	email string
+	zip int
+}
+
+newContact := contact { "joe@gmail.com", 94901}
+```
+
+Need to remember that a new variable declaration still needs ':='
+
+the second and better way:
+
+```
+type contact struct { 
+	email string
+	zip int
+}
+
+newContact := contact { email: "joe@gmail.com", zip: 94901}
+```
+
+and third way which I like:
+
+```
+type contact struct { 
+	email string
+	zip int
+}
+
+var newContact contact
+
+newContact.email = "joe@gmail.com"
+newContact.zip = 94901
+
+```
+
+Also if we are using a type inside another type we can do a bit of shortcut:
+
+```
+
+type contact struct { 
+	email string
+	zip int
+}
+
+
+type person struct {
+	firstName string
+	lastName string
+	contact
+}
+
+
+alex := person{
+	firstName: "Al",
+	lastName: "Park",
+	contact: contact {
+		email: "alexp@gmail",
+		zip: 94901,
+	},
+}
+
+```
+This is equal to having 'contact contact' in the type declaration.
+Also I really need to remember these ',' after each term.
+
+
+
+
+
