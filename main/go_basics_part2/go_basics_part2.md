@@ -133,3 +133,4 @@ I guess the extension does not apply here.
 
 ## Cocurrency vs Parralelism 
 
+we link a bunch of types to a  new (probably more generic) type th
